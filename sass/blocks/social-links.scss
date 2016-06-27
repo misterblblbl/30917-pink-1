@@ -1,0 +1,56 @@
+.social-links {
+  @include no-list;
+  width: 175px;
+  font-size: 0;
+
+  @media ($mobile-width-only) {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
+.social-links__item {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+}
+
+.social-links__item:last-child {
+  margin-right: 0;
+}
+
+.social-links__link svg {
+  position: absolute;
+  top: 30%;
+  left: 31%;
+
+  width: 18px;
+  height: 18px;
+}
+
+.social-links__link--yt svg {
+  top: 30%;
+  left: 35%;
+}
+
+.social-links__link {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid $middle-grey;
+  border-radius: 50%;
+}
+
+.social-links__link:hover {
+  border: 3px solid black;
+}
+
+.social-links__link:active {
+  opacity: 0.3;
+}
+
+
+

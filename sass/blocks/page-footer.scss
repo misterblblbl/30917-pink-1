@@ -1,0 +1,102 @@
+.page-footer {
+  padding-top: 37px;
+
+  @media ($tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.page-footer__wrapper {
+  @include container-fluid;
+}
+
+.page-footer__links {
+  margin: 0 auto;
+  text-align: center;
+
+  @media ($tablet-width) {
+    display: block;
+    padding: 35px 0;
+  }
+
+  @media ($desktop-width) {
+    display: block;
+    padding: 55px 0;
+  }
+}
+
+.page-footer__links-wrapper {
+  @include container-fluid;
+  @media ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__links--main {
+  @media ($mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-footer__logo {
+  width: 149px;
+  text-align: center;
+
+  @media ($mobile-width-only) {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  @media ($tablet-width) {
+    flex-basis: 145px;
+  }
+
+  @media ($desktop-width) {
+    flex-basis: 149px;
+  }
+}
+
+.page-footer__copyright {
+  text-align: center;
+
+  @media ($mobile-width-only) {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  @media ($tablet-width) {
+    flex-basis: 135px;
+  }
+
+  @media ($desktop-width) {
+    flex-basis: 160px;
+  }
+}
+
+.page-footer__copyright-text {
+  @media ($tablet-width) {
+    font-family: 'Open Sans','Arial', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media ($desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 35px;
+  margin-left: 15px;
+  font-size: 0;
+
+  background-image: url(../../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
