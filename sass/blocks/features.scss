@@ -7,10 +7,12 @@
   background-position: center 114%;
   background-size: 200px auto;
 
-  @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    background-image: url(../../img/iphone-screen-mobile@2x.png);
+  @media ($mobile-width-only) {
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url(../../img/iphone-screen-mobile@2x.png);
+    }
   }
 
   @media ($tablet-width) {

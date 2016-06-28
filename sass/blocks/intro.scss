@@ -11,11 +11,13 @@
 
   color: #FFFFFF;
 
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    background-image: url(../../img/bg-back-mobile@2x.jpg);
-    background-size: cover;
-    background-position: center top;
+  @media ($mobile-width-only) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url(../../img/bg-back-mobile@2x.jpg);
+      background-size: cover;
+      background-position: center top;
+    }
   }
 
   @media ($tablet-width) {
@@ -49,11 +51,13 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center 175px, center top;
 
-  @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-    background-image: url(../../img/iphone-hand-mobile@2x.png), url(../../img/bg-back-mobile@2x.jpg);
-    background-size: 290px, auto 460px;
-    background-position: center 140px, center top;
+  @media ($mobile-width-only) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url(../../img/iphone-hand-mobile@2x.png), url(../../img/bg-back-mobile@2x.jpg);
+      background-size: 290px, auto 460px;
+      background-position: center 140px, center top;
+    }
   }
 
   @media ($tablet-width) {
