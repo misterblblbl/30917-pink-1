@@ -1,9 +1,12 @@
 .users-gallery__wrapper {
   @include container-fluid;
+  display: flex;
+  flex-direction: column;
 
   @media ($tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
   }
 }

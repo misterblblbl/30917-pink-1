@@ -6,8 +6,7 @@
   background-repeat: no-repeat;
   background-position: center 114%;
   background-size: 200px auto;
-
-  @media ($mobile-width-only) {
+  @media($mobile-width-only) {
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -95,7 +94,7 @@
     content: "";
     position: absolute;
     left: 10px;
-    bottom: 320px;
+    top: -55px;
     width: 300px;
     height: 300px;
     z-index: 10;

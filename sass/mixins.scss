@@ -11,11 +11,11 @@
   margin: 0 auto;
 
   @media ($tablet-width) {
-      width: 620px;
+    width: 620px;
   }
 
   @media ($desktop-width) {
-      width: 960px;
+    width: 940px;
   }
 }
 
@@ -27,7 +27,7 @@
   @media ($tablet-width) {
     padding: 0;
     width: 84%;
-    max-width: 960px;
+    max-width: 939px;
     margin: 0 auto;
   }
 }

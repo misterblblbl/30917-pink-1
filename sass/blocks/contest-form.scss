@@ -33,8 +33,9 @@
   }
 
   @media ($tablet-width) {
-    padding: 52px 55px;
     border: 2px solid $middle-grey;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 55px;
   }
 
@@ -69,12 +70,18 @@
   }
 
   @media ($tablet-width) {
+    padding-left: 120px;
     order: 4;
+  }
+
+  @media ($desktop-width) {
+    padding-left: 60px;
   }
 }
 
 .contest-form__field--contacts {
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 15px;
 
   @media ($tablet-width) {
     order: 3;
@@ -94,6 +101,10 @@
 
   @media ($tablet-width) {
     order: 2;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 
   @media ($desktop-width) {
@@ -114,7 +125,7 @@
   @media ($desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -123,15 +134,31 @@
   @media ($desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    height: 100%;
   }
+}
+
+.contest-form__element--name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contest-form__element--achievements {
   margin-left: 70px;
   margin-bottom: 50px;
+
+  @media ($tablet-width) {
+    margin-left: 0;
+    margin-right: 70px;
+  }
+
+
   @media ($desktop-width) {
-    flex-basis: 30%;
+    padding-left: 70px;
+    margin-right: 0;
+    flex-basis: 24%;
   }
 }
 
@@ -172,9 +199,14 @@
   text-align: left;
   color: $pink;
   padding: 0;
+
+  &--name {
+    margin-right: 20px;
+  }
 }
 
 .contest-form__input-field {
+  position: relative;
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -196,6 +228,18 @@
   &:focus {
     outline: none;
     border-color: $pink;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &-moz-placeholder{
+    color: $dark-blue;
+  }
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
   }
 }
 
@@ -371,14 +415,71 @@
   color: $pink;
 }
 
-.contest-form__element--phone {
+.contest-form__label--address {
+  @media ($tablet-width) {
+    order: 1;
+    margin-top: 15px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      bottom: 45px;
+      width: 60px;
+      height: 60px;
+      background-color: $middle-grey;
+      background-image: url(../../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: center;
+    }
+  }
+}
+
+.contest-form__label--phone {
+  @media ($tablet-width) {
+    order: 1;
+    margin-top: 15px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      bottom: 45px;
+      width: 60px;
+      height: 60px;
+      background-color: $middle-grey;
+      background-image: url(../../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: center;
+    }
+  }
+}
+
+.contest-form__element--address {
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media ($desktop-width) {
     width: 373px;
     float: left;
   }
 }
 
-.contest-form__element--address {
+.contest-form__element--phone {
+  @media ($tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
   @media ($desktop-width) {
     width: 373px;
     float: right;
@@ -392,7 +493,7 @@
   font-family: 'Open Sans','Arial', sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   color: $pink;
@@ -421,4 +522,25 @@
   font-size: 18px;
   line-height: 20px;
   color: $dark-blue;
+
+  &:hover {
+    border-color: black;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $pink;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &-moz-placeholder{
+    color: $dark-blue;
+  }
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
+  }
 }

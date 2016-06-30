@@ -42,10 +42,10 @@ gulp.task("style", function() {
 //Минифицировать изображения
 gulp.task("images", function() {
   return gulp.src("img/*.{png,jpg,svg}")
-    .pipe(imagemin({
+    /*.pipe(imagemin({
       optimizationLevel: 3,
       progressive: true
-    }))
+    }))*/
     .pipe(gulp.dest("build/img"));
 });
 
