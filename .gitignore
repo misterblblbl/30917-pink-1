@@ -1,5 +1,9 @@
 node_modules/
-build/
+css/
+fonts/
+img/
+js/
+sass/
 .DS_Store
 Thumbs.db
 .idea
