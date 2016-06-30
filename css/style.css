@@ -1436,7 +1436,7 @@ th {
   left: 0;
   z-index: 10;
   width: 100%;
-  height: 40px;
+  height: 41px;
   background-image: linear-gradient(to top right, transparent 50%, white 50%), linear-gradient(to top left, transparent 50%, white 50%);
   background-size: 50.1% 100%;
   background-repeat: no-repeat;
@@ -1943,7 +1943,7 @@ th {
     max-width: 939px;
     margin: 0 auto; }
   .contacts__wrapper::after{
-    height: 70px;
+    height: 71px;
     bottom: -70px; }
   .contacts__heading{
     padding: 0 70px;
@@ -2224,7 +2224,7 @@ th {
   .pricing-table__cell--feature{
     font-size: 18px; }
   .pricing-table__header{
-    min-width: 234px; }
+    min-width: 220px; }
   .pricing-table__header--empty{
     display: table-cell;
     border: none; }
@@ -2444,7 +2444,7 @@ th {
     background-position: center top; }
   .intro--main{
     background-image: url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
-    background-size: 290px, auto 460px;
-    background-position: center 140px, center top; }
+    background-size: 290px, auto 495px;
+    background-position: center 140px, center -15%; }
   .features{
     background-image: url(../img/iphone-screen-mobile@2x.png); } }
