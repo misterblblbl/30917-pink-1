@@ -600,6 +600,7 @@ th {
   left: 0;
   bottom: 100px;
   z-index: 100;
+  font-size: 0;
   text-align: center; }
 
 .reviews__slider-controls {
@@ -607,17 +608,23 @@ th {
 
 .reviews__label {
   display: inline-block;
+  position: relative;
   vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer; }
+.reviews__label:before {
+  content: '';
+  position: absolute;
   width: 6px;
   height: 6px;
-  margin: 0 9px;
   background-color: #bec2c7;
   border-radius: 50%;
-  cursor: pointer;
-  transition: background-color .2s; }
-  .reviews__label:hover {
+  transition: background-color .2s;
+}
+  .reviews__label:before:hover {
     background-color: #7e868f; }
-  .reviews__label:active {
+  .reviews__label:before:active {
     background-color: #e9ebec; }
 
 .reviews__item {
@@ -645,10 +652,11 @@ th {
   line-height: 30px;
   font-weight: normal; }
 
-#review-toggle-1:checked ~ .reviews__controls label[for="review-toggle-1"],
-#review-toggle-2:checked ~ .reviews__controls label[for="review-toggle-2"],
-#review-toggle-3:checked ~ .reviews__controls label[for="review-toggle-3"] {
+#review-toggle-1:checked ~ .reviews__controls label[for="review-toggle-1"]:before,
+#review-toggle-2:checked ~ .reviews__controls label[for="review-toggle-2"]:before,
+#review-toggle-3:checked ~ .reviews__controls label[for="review-toggle-3"]:before {
   background-color: #FFFFFF;
+  top: -3px;
   border: 3px solid #1d2631; }
 
 #review-toggle-1:checked ~ .reviews__inner .reviews__items {
@@ -677,24 +685,31 @@ th {
 
 .pricing__label {
   display: inline-block;
+  position: relative;
   vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  cursor: pointer; }
+.pricing__label:before {
+  content: '';
+  position: absolute;
   width: 6px;
   height: 6px;
-  margin: 0 9px;
   background-color: #bec2c7;
   border-radius: 50%;
-  cursor: pointer;
-  transition: background-color .2s; }
-  .pricing__label:hover {
-    background-color: #7e868f; }
-  .pricing__label:active {
-    background-color: #e9ebec; }
+  transition: background-color .2s;
+}
+.pricing__label:before:hover {
+  background-color: #7e868f; }
+.pricing__label:before:active {
+  background-color: #e9ebec; }
 
 .pricing__controls {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 30px;
+  font-size: 0;
   z-index: 100;
   text-align: center; }
 
@@ -2373,10 +2388,11 @@ th {
     margin-bottom: 45px; }
   .reviews__inner{
     padding-bottom: 50px; }
-  #pricing-toggle-1:checked ~ .pricing__controls label[for="pricing-toggle-1"],
-  #pricing-toggle-2:checked ~ .pricing__controls label[for="pricing-toggle-2"],
-  #pricing-toggle-3:checked ~ .pricing__controls label[for="pricing-toggle-3"]{
+  #pricing-toggle-1:checked ~ .pricing__controls label[for="pricing-toggle-1"]:before,
+  #pricing-toggle-2:checked ~ .pricing__controls label[for="pricing-toggle-2"]:before,
+  #pricing-toggle-3:checked ~ .pricing__controls label[for="pricing-toggle-3"]:before{
     background-color: #FFFFFF;
+    top: -3px;
     border: 3px solid #1d2631; }
   #pricing-toggle-1:checked ~ .pricing__slider .pricing-table{
     transform: translate(0); }
