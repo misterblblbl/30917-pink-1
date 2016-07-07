@@ -17,7 +17,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -1609,7 +1608,7 @@ th {
     width: 620px; }
   .slogan__line{
     margin-bottom: 0; }
-  __line--second{
+  .slogan__line__line--second{
     padding: 0 50px; }
   .features{
     padding-bottom: 0;
@@ -2102,7 +2101,7 @@ th {
     line-height: 60px; }
   .slogan__wrapper{
     width: 940px; }
-  __line--second{
+  .slogan__wrapper__line--second{
     padding: 0 150px; }
   .features{
     background-image: none; }
@@ -2416,12 +2415,13 @@ th {
     width: auto;
     min-width: 300px;
     margin: 0 auto;
-    margin: 0;
     padding-bottom: 50px; }
   .contest-form__submit-block{
     width: auto;
     min-width: 300px;
     margin: 0 auto; }
+  .user-interface__tools{
+    position: relative;}
   .user-interface__tools::after{
     content: '';
     position: absolute;
