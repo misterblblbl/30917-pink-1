@@ -657,6 +657,7 @@ th {
 #review-toggle-3:checked ~ .reviews__controls label[for="review-toggle-3"]:before {
   background-color: #FFFFFF;
   top: -3px;
+  left: 8px;
   border: 3px solid #1d2631; }
 
 #review-toggle-1:checked ~ .reviews__inner .reviews__items {
@@ -2393,6 +2394,7 @@ th {
   #pricing-toggle-3:checked ~ .pricing__controls label[for="pricing-toggle-3"]:before{
     background-color: #FFFFFF;
     top: -3px;
+    left: 8px;
     border: 3px solid #1d2631; }
   #pricing-toggle-1:checked ~ .pricing__slider .pricing-table{
     transform: translate(0); }

@@ -42,33 +42,39 @@ menuToggle.addEventListener('click', function(){
   }
 });
 
-sliderControlLeft.addEventListener('click', function() {
-  for(var i = 0; i < toggles.length; i++) {
-    if(toggles[i].checked) {
-      if(i == 0) {
-        toggles[i].checked = false;
-        toggles[toggles.length - 1].checked = true;
-        break;
-      } else {
-        toggles[i].checked = false;
-        toggles[i - 1].checked = true;
-        break;
+if(sliderControlLeft) {
+  sliderControlLeft.addEventListener('click', function() {
+    for(var i = 0; i < toggles.length; i++) {
+      if(toggles[i].checked) {
+        if(i == 0) {
+          toggles[i].checked = false;
+          toggles[toggles.length - 1].checked = true;
+          break;
+        } else {
+          toggles[i].checked = false;
+          toggles[i - 1].checked = true;
+          break;
+        }
       }
     }
-  }
-});
-sliderControlRight.addEventListener('click', function() {
-  for(var i = 0; i < toggles.length; i++) {
-    if(toggles[i].checked) {
-      if(i == toggles.length - 1) {
-        toggles[i].checked = false;
-        toggles[0].checked = true;
-        break;
-      } else {
-        toggles[i].checked = false;
-        toggles[i + 1].checked = true;
-        break;
+  });
+}
+
+if(sliderControlRight) {
+  sliderControlRight.addEventListener('click', function() {
+    for(var i = 0; i < toggles.length; i++) {
+      if(toggles[i].checked) {
+        if(i == toggles.length - 1) {
+          toggles[i].checked = false;
+          toggles[0].checked = true;
+          break;
+        } else {
+          toggles[i].checked = false;
+          toggles[i + 1].checked = true;
+          break;
+        }
       }
     }
-  }
-});
+  });
+}
+
